@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Narendra Kumar | Junior Data Analyst & MIS Executive</title>
+  <meta name="description" content="Portfolio of a B.Tech CSE student specializing in Power BI, Python, MySQL and MIS reporting." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="cursor-glow" id="glow"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">&lt;<span>NK</span>/&gt;</a>
+    <nav id="menu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#dashboard">Live Demo</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeBtn" aria-label="Toggle theme">🌙</button>
+      <button id="burger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="eyebrow reveal"><span class="dot"></span> Open to work · Entry-level roles</p>
+      <h1 class="reveal">Hi, I'm <span class="grad">Narendra Kumar</span></h1>
+      <h2 class="reveal"><span id="typed"></span><span class="caret">|</span></h2>
+      <p class="lead reveal">
+        Final-year B.Tech (CSE) student who turns messy data into clean dashboards,
+        clear KPIs and decisions people can act on. Powered by Power BI, Python and MySQL.
+      </p>
+      <div class="cta reveal">
+        <a href="#projects" class="btn primary">View Projects →</a>
+        <a href="#contact" class="btn ghost">Hire Me</a>
+        <a href="Narendra_Kumar_DA_Resume.pdf" class="btn ghost" download>Resume ↓</a>
+      </div>
+    </div>
+
+    <div class="hero-card reveal tilt">
+      <div class="win-bar"><i></i><i></i><i></i><span>analyst.py</span></div>
+<pre><code><span class="c"># my daily workflow</span>
+<span class="k">import</span> pandas <span class="k">as</span> pd
+
+df = pd.read_csv(<span class="s">"raw_data.csv"</span>)
+df = df.dropna().drop_duplicates()
+
+kpi = {
+  <span class="s">"sales"</span>:  <span class="n">"$9.7M"</span>,
+  <span class="s">"orders"</span>: <span class="n">"26K"</span>,
+  <span class="s">"calls"</span>:  <span class="n">"45,000+"</span>,
+}
+
+<span class="k">print</span>(<span class="s">"Insights ready ✅"</span>)</code></pre>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat reveal"><b data-count="3">0</b><span>End-to-end projects</span></div>
+    <div class="stat reveal"><b data-count="9.7" data-prefix="$" data-suffix="M" data-dec="1">0</b><span>Sales dashboard tracked</span></div>
+    <div class="stat reveal"><b data-count="45000" data-suffix="+">0</b><span>Call records cleaned</span></div>
+    <div class="stat reveal"><b data-count="22" data-suffix="%">0</b><span>Churn rate analysed</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h3 class="title reveal"><span>01.</span> About Me</h3>
+    <div class="about-grid">
+      <p class="reveal">
+        I'm a final-year B.Tech Computer Science student with <b>Data Science with AI</b> training
+        from Internshala, aiming for an entry-level <b>MIS Executive / Junior Data Analyst</b> role.
+        I've built 3 end-to-end reporting projects using Power BI, Python and MySQL, from raw files to
+        interactive dashboards.
+        <br /><br />
+        I'm strong in data cleaning, data validation, KPI tracking and dashboard reporting, and I love
+        turning numbers into simple recommendations that help a business decide faster.
+      </p>
+      <ul class="facts reveal">
+        <li><span>🎓</span> B.Tech CSE · 2023 – Present</li>
+        <li><span>📊</span> Power BI · Tableau · Excel</li>
+        <li><span>🐍</span> Python · Pandas · NumPy</li>
+        <li><span>🗄️</span> MySQL · HackerRank 5★</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h3 class="title reveal"><span>02.</span> Featured Projects</h3>
+
+    <div class="filters reveal">
+      <button class="chip active" data-f="all">All</button>
+      <button class="chip" data-f="powerbi">Power BI</button>
+      <button class="chip" data-f="python">Python</button>
+      <button class="chip" data-f="excel">Excel</button>
+    </div>
+
+    <div class="cards">
+      <article class="card tilt reveal" data-tags="powerbi python">
+        <div class="card-top"><span class="emoji">📉</span><span class="date">09/2026</span></div>
+        <h4>Customer Churn &amp; Retention Analysis</h4>
+        <p class="sub">RavenStack · Python, Power BI</p>
+        <div class="kpis"><div><b>22%</b><small>Churn rate</small></div><div><b>5</b><small>Files merged</small></div><div><b>3</b><small>Dashboards</small></div></div>
+        <ul>
+          <li>Cleaned and merged 5 raw files (accounts, subscriptions, churn, usage, support) into one reporting table using Python.</li>
+          <li>Built 3 Power BI dashboards tracking churn by plan tier, industry, country and referral source.</li>
+          <li>Flagged high-risk segments and seasonal churn spikes to support retention reporting.</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>Power BI</span><span>Pandas</span></div>
+      </article>
+
+      <article class="card tilt reveal" data-tags="powerbi python">
+        <div class="card-top"><span class="emoji">🏦</span><span class="date">09/2026</span></div>
+        <h4>Bank Marketing Funnel Analysis</h4>
+        <p class="sub">Python, Power BI, DAX</p>
+        <div class="kpis"><div><b>45K+</b><small>Records</small></div><div><b>3</b><small>Funnel stages</small></div><div><b>2</b><small>Report pages</small></div></div>
+        <ul>
+          <li>Cleaned 45,000+ call records and built a 3-stage funnel: Contacted → Engaged → Converted.</li>
+          <li>Created DAX measures and KPI cards (conversion rate, engagement rate) for an interactive dashboard.</li>
+          <li>Analysed outcomes by month, channel and customer segment to improve decision-making.</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>Power BI</span><span>DAX</span></div>
+      </article>
+
+      <article class="card tilt reveal" data-tags="powerbi excel">
+        <div class="card-top"><span class="emoji">🛒</span><span class="date">08/2026</span></div>
+        <h4>Online Retail Sales Analysis</h4>
+        <p class="sub">Power BI, Excel, DAX</p>
+        <div class="kpis"><div><b>$9.7M</b><small>Sales</small></div><div><b>26K</b><small>Orders</small></div><div><b>12%</b><small>YoY growth</small></div></div>
+        <ul>
+          <li>Cleaned and transformed raw transactions using Power Query for reliable reporting.</li>
+          <li>Built an interactive dashboard with year, month and country filters.</li>
+          <li>Identified seasonal revenue trends and top-performing countries for business planning.</li>
+        </ul>
+        <div class="tags"><span>Power Query</span><span>Excel</span><span>DAX</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- LIVE DASHBOARD DEMO -->
+  <section id="dashboard" class="section">
+    <h3 class="title reveal"><span>03.</span> Live Dashboard Demo</h3>
+    <p class="note reveal">A small interactive chart built with pure JavaScript (sample data). Click a year to switch.</p>
+    <div class="dash reveal">
+      <div class="dash-head">
+        <div>
+          <small>Total Sales</small>
+          <h4 id="dTotal">$0</h4>
+        </div>
+        <div class="years" id="years">
+          <button class="chip active" data-y="2024">2024</button>
+          <button class="chip" data-y="2025">2025</button>
+          <button class="chip" data-y="2026">2026</button>
+        </div>
+      </div>
+      <canvas id="chart" height="260"></canvas>
+      <div class="dash-foot"><span id="dBest"></span><span id="dGrowth"></span></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h3 class="title reveal"><span>04.</span> Skills</h3>
+    <div class="skill-grid">
+      <div class="skill-box reveal">
+        <h4>Data &amp; Reporting Tools</h4>
+        <div class="bar"><label>Advanced MS Excel</label><i data-w="90"></i></div>
+        <div class="bar"><label>Power BI</label><i data-w="88"></i></div>
+        <div class="bar"><label>MySQL</label><i data-w="82"></i></div>
+        <div class="bar"><label>Tableau</label><i data-w="70"></i></div>
+        <div class="bar"><label>Power Query</label><i data-w="85"></i></div>
+      </div>
+      <div class="skill-box reveal">
+        <h4>Programming &amp; Analysis</h4>
+        <div class="bar"><label>Python</label><i data-w="85"></i></div>
+        <div class="bar"><label>Pandas</label><i data-w="84"></i></div>
+        <div class="bar"><label>NumPy</label><i data-w="75"></i></div>
+        <div class="bar"><label>Matplotlib</label><i data-w="78"></i></div>
+        <div class="bar"><label>C++ (Basic)</label><i data-w="55"></i></div>
+      </div>
+      <div class="skill-box reveal">
+        <h4>Business &amp; Analytical</h4>
+        <div class="tags big">
+          <span>Data Cleaning</span><span>Data Validation</span><span>KPI Tracking</span>
+          <span>MIS Reporting</span><span>Dashboard Design</span><span>Trend Analysis</span>
+          <span>Business Insights</span><span>Data-Driven Recommendations</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION + CERTS -->
+  <section id="education" class="section">
+    <h3 class="title reveal"><span>05.</span> Education &amp; Certificates</h3>
+    <div class="timeline">
+      <div class="t-item reveal">
+        <span class="t-dot"></span>
+        <h4>B.Tech – Computer Science Engineering</h4>
+        <p>Arya Institute of Engineering Technology and Management, Jaipur</p>
+        <small>07/2023 – Present</small>
+      </div>
+      <div class="t-item reveal">
+        <span class="t-dot"></span>
+        <h4>Data Science with AI – Internshala</h4>
+        <p>8-Week Training Program · Certificates: IIT Parivartika &amp; NSDC</p>
+      </div>
+    </div>
+
+    <div class="certs">
+      <div class="cert reveal tilt">🏅<b>SQL (Basic &amp; Intermediate)</b><small>HackerRank · Verified</small></div>
+      <div class="cert reveal tilt">⭐<b>5-Star Badge, MySQL</b><small>HackerRank</small></div>
+      <div class="cert reveal tilt">📘<b>Power BI for Beginners</b><small>Simplilearn × Microsoft · Verified</small></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h3 class="title reveal"><span>06.</span> Let's Work Together</h3>
+    <p class="lead reveal">Looking for an MIS Executive / Junior Data Analyst? Let's talk.</p>
+    <p class="lead reveal">📍 Jaipur, Rajasthan · 📞 <a href="tel:+918290777591">+91 82907 77591</a> · ✉️ narendrakumawat82022@gmail.com</p>
+    <div class="cta reveal">
+      <a href="mailto:narendrakumawat82022@gmail.com" class="btn primary">✉️ Email Me</a>
+      <a href="tel:+918290777591" class="btn ghost">📞 Call</a>
+      <button class="btn ghost" id="copyMail">Copy Email</button>
+      <a href="https://linkedin.com/in/narendra-kumar-b08bbb2b0" target="_blank" rel="noopener" class="btn ghost">LinkedIn</a>
+      <a href="https://github.com/Narendraparjapat123" target="_blank" rel="noopener" class="btn ghost">GitHub</a>
+    </div>
+  </section>
+
+  <footer>© <span id="year"></span> Narendra Kumar · Built with HTML, CSS &amp; JavaScript</footer>
+  <div class="toast" id="toast">Email copied ✅</div>
+  <script src="script.js"></script>
+</body>
+</html>
